@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Furniture Marketing & Advanced Selection</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Furniture Marketing & Material-Colour Selection</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#types">Types</a></li>
+        <li><a href="#selection">Selection</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to Premium Furniture</h2>
+    <p>Explore our wide range of furniture with advanced material and colour customization to suit your interiors perfectly.</p>
+    <div class="banner">
+      <img src="https://via.placeholder.com/800x300" alt="Furniture Banner">
+    </div>
+  </section>
+
+  <section id="types">
+    <h2>Types of Furniture</h2>
+    <div class="furniture-types">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Sofa">
+        <h3>Sofa Sets</h3>
+        <p>Designer sofas with modern and traditional styles, available in leather and fabric.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Dining Table">
+        <h3>Dining Tables</h3>
+        <p>Glass top, wooden, and marble dining tables crafted for elegance.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Bed">
+        <h3>Beds</h3>
+        <p>King, Queen, and single beds with hydraulic storage options.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Wardrobe">
+        <h3>Wardrobes</h3>
+        <p>Sliding and hinged wardrobes with mirror options and modular interiors.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Chair">
+        <h3>Chairs</h3>
+        <p>Ergonomic and stylish chairs for study, office, and dining use.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Cabinet">
+        <h3>Cabinets</h3>
+        <p>Storage and showcase cabinets crafted with premium wood finishes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="selection">
+    <h2>Advanced Material & Colour Selection</h2>
+    <div class="selection-panel">
+      <form id="selectionForm">
+        <label for="furnitureType">Select Furniture Type:</label>
+        <select id="furnitureType">
+          <option value="sofa">Sofa</option>
+          <option value="bed">Bed</option>
+          <option value="dining">Dining Table</option>
+          <option value="wardrobe">Wardrobe</option>
+          <option value="chair">Chair</option>
+          <option value="cabinet">Cabinet</option>
+        </select>
+
+        <label for="material">Choose Material:</label>
+        <select id="material">
+          <option value="wood">Wood</option>
+          <option value="metal">Metal</option>
+          <option value="glass">Glass</option>
+          <option value="leather">Leather</option>
+          <option value="fabric">Fabric</option>
+          <option value="marble">Marble</option>
+        </select>
+
+        <label for="woodType">If Wood, select type:</label>
+        <select id="woodType">
+          <option value="none">-- Select --</option>
+          <option value="teak">Teak</option>
+          <option value="oak">Oak</option>
+          <option value="sheesham">Sheesham</option>
+          <option value="plywood">Plywood</option>
+          <option value="mango">Mango Wood</option>
+        </select>
+
+        <label for="finish">Select Finish:</label>
+        <select id="finish">
+          <option value="matte">Matte</option>
+          <option value="glossy">Glossy</option>
+          <option value="textured">Textured</option>
+          <option value="natural">Natural</option>
+        </select>
+
+        <label for="primaryColour">Choose Primary Colour:</label>
+        <input type="color" id="primaryColour" value="#d4af37">
+
+        <label for="secondaryColour">Choose Secondary Colour (optional):</label>
+        <input type="color" id="secondaryColour" value="#ffffff">
+
+        <label for="pattern">Select Pattern or Upholstery:</label>
+        <select id="pattern">
+          <option value="plain">Plain</option>
+          <option value="stripes">Stripes</option>
+          <option value="floral">Floral</option>
+          <option value="geometric">Geometric</option>
+          <option value="abstract">Abstract</option>
+        </select>
+
+        <button type="button" onclick="showSelection()">Show Selection</button>
+      </form>
+
+      <div id="selection-result"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us for Custom Orders</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message or Custom Requirements" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Premium Furniture Marketing. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+          </html>
